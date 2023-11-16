@@ -1,0 +1,376 @@
+@media (min-width: 993)
+ {}
+@media (min-width: 769) and (max-width:992)
+ {}
+@media (max-width: 768) 
+{}
+
+
+
+
+/* biografy */
+.colored-button:link {
+    background-color: rgb(106, 106, 215);
+    color: rgb(37, 39, 20);
+    border: 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid rgb(1, 1, 1);
+}
+
+.colored-button:hover {
+    background-color: magenta;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid purple;
+}
+
+.colored-button:active {
+    background-color: yellow;
+    color: green;
+    text-decoration: none;
+    border: 2px solid rgb(83, 35, 204);
+}
+
+#c1:nth-child(even) {
+    background-color: rgba(6, 252, 252, 0.516);
+    color: rgb(10, 112, 83);
+}
+
+#c2:nth-child(even) {
+    background-color: rgb(71, 32, 82);
+    color: rgb(245, 128, 173);
+}
+
+#c3:nth-child(even) {
+    background-color: rgba(18, 121, 66, 0.936);
+    color: rgb(245, 247, 205);
+}
+
+#c4:nth-child(even) {
+    background-color: rgb(203, 206, 31);
+    color: rgb(98, 18, 195);
+}
+
+#c5:nth-child(even) {
+    background-color: rgba(71, 21, 72, 0.416);
+    color: rgb(70, 7, 54);
+}
+
+.biography-h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.biography-nazad-na-golovny{
+ font-style: italic;}
+.biography-do-zmisty
+ {
+font-weight: bold;}
+
+.biography-h3 {
+    text-align: center;
+}
+
+ .biography-p {
+    font-size: 120%;
+}
+
+.biography-h2 {
+    font-size: 180%;
+}
+
+.biography-uppercase {
+    text-transform: uppercase;
+}
+/* friends */
+  table {
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  table,
+  th,
+  td {
+      border: 1px solid black;
+  }
+
+  th,
+  td {
+      padding: 8px;
+      text-align: left;
+
+  }
+
+  table tbody tr:nth-child(odd) {
+      background-color: gray;
+      color: #fff;
+  }
+
+  #d1 {
+      background-color: gray;
+      color: #fff;
+  }
+
+  #d2 {
+      background-color: gray;
+      color: #fff;
+  }
+
+  #d3 {
+      background-color: gray;
+      color: #fff;
+  }
+
+  #d4 {
+      background-color: gray;
+      color: #fff;
+  }
+
+  table tbody tr :nth-child(even) {
+      background-color: white;
+      color: black;
+  }
+
+  #f1 {
+      background-color: white;
+      color: black;
+  }
+
+  #f2 {
+      background-color: white;
+      color: black;
+  }
+
+  #f3 {
+      background-color: white;
+      color: black;
+  }
+
+  #f4 {
+      background-color: white;
+      color: black;
+  }
+
+  .friends-h1 {
+      text-align: center;
+      font-size: 22px;
+  }
+
+  .friends-nazad{
+      font-style: italic;
+  }
+
+      .friends-h2 {
+      text-align: center;
+  }
+
+  tr>th {
+      text-align: center;
+      background-color: green;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+  }
+
+  tr>td:nth-child(5) {
+      text-align: right;
+  }
+/* gallery */
+.gallery-h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.gallery-golovna {
+    font-style: italic;
+}
+
+.gallery-h2 {
+    text-align: center;
+}
+
+.gallery-zob-1 {
+    font-size: 16.8px;
+    text-align: center;
+}
+
+.gallery-zob-2 {
+    font-size: 31.2px;
+    text-align: center;
+}
+
+.gallery-zob-3{
+    font-size: 40.56px;
+    text-align: center;
+}
+
+.gallery-img {
+    display: block;
+    margin: 0 auto;
+}
+/* index */
+/* 1  */
+#index-biography:link {
+
+    color: #f9008d;
+}
+
+#index-biography:hover {
+    color: #b210e3;
+}
+
+#index-biography:visited {
+    color: #420c63;
+}
+
+/* 2 */
+#index-nowadays:link {
+
+    color: #d7e90f;
+}
+
+#index-nowadays:hover {
+    color: #0df0ec;
+}
+
+#index-nowadays:visited {
+    color: #00fc65;
+}
+
+/* 3 */
+#index-friends:link {
+
+    color: #c05d92;
+}
+
+#index-friends:hover {
+    color: #000000;
+}
+
+#index-friends:visited {
+    color: #372b9d;
+}
+
+/* 4 */
+#index-gallery:link {
+
+    color: #3c786e;
+}
+
+#index-gallery:hover {
+    color: #fb6908;
+}
+
+#index-gallery:visited {
+    color: #767812;
+}
+
+.index-h1 {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+
+
+.index-p {
+    font-size: 120%;
+}
+
+#index-biography:link {
+
+    color: #f9008d;
+}
+
+#index-biography:hover {
+    color: #b210e3;
+}
+
+#index-biography:visited {
+    color: #420c63;
+}
+
+/* 2 */
+#index-nowadays:link {
+
+    color: #d7e90f;
+}
+
+#index-nowadays:hover {
+    color: #0df0ec;
+}
+
+#index-nowadays:visited {
+    color: #00fc65;
+}
+
+/* 3 */
+#index-friends:link {
+
+    color: #c05d92;
+}
+
+#index-friends:hover {
+    color: #000000;
+}
+
+#index-friends:visited {
+    color: #372b9d;
+}
+
+/* 4 */
+#index-gallery:link {
+
+    color: #3c786e;
+}
+
+#index-gallery:hover {
+    color: #fb6908;
+}
+
+#index-gallery:visited {
+    color: #767812;
+}
+
+
+/* nowadays */
+  li>ul :nth-child(odd) {
+      background-color: grey;
+      color: white;
+  }
+
+  ul>li :nth-child(even) {
+      background-color: white;
+      color: black;
+  }
+
+  ol>li:nth-child(5):hover {
+      cursor: pointer;
+  }
+
+  ol>li:nth-child(3):hover {
+      cursor: pointer;
+  }
+
+  li li:nth-child(3) {
+      cursor: pointer;
+  }
+
+  ol>li:nth-child(4):hover {
+      background-color: brown;
+  }
+
+  .nowadays-h1 {
+      text-align: center;
+      font-size: 22px;
+  }
+
+  .nowadays-link {
+      font-style: italic;
+  }
+
+  .nowadays-h2 {
+      text-align: center;
+  }
