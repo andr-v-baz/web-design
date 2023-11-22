@@ -1,13 +1,36 @@
-@media (min-width: 993)
- {}
-@media (min-width: 769) and (max-width:992)
- {}
-@media (max-width: 768) 
-{}
 
+.index-p {
+    text-align: center;
+  }
+  .index-link a {
+    display: inline-block;
+    margin-right: 10px;}
+  
+  @media (min-width: 992px) {
+    .index-link, #index-biography, #index-nowadays, #index-friends, #index-gallery {
+      display: inline-block;
+      margin-right: 10px; }
+  }
 
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    #index-friends, #index-gallery {
+      display:block ;
+      margin-bottom: 10px;} 
+     #index-biography, #index-nowadays
+      {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  
 
-
+  
+  @media (max-width: 767px) {
+    .index-link, #index-biography, #index-nowadays, #index-friends, #index-gallery   {
+      display: block;
+      margin-bottom: 10px; 
+  }}
 /* biografy */
 .colored-button:link {
     background-color: rgb(106, 106, 215);
