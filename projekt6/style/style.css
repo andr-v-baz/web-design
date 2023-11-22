@@ -14,14 +14,14 @@
 
   
   @media (min-width: 768px) and (max-width: 991px) {
-    #index-friends, #index-gallery {
-      display:block ;
+   .one-link {
+      display: block; ;
       margin-bottom: 10px;} 
-     #index-biography, #index-nowadays
-      {
-        display: block;
-        margin-bottom: 10px;
-      }
+      .two-link {
+        display: block;;
+        margin-bottom: 10px;} 
+  
+      
     }
   
 
