@@ -1,37 +1,104 @@
 
-.index-p {
-    text-align: center;
-  }
-  .index-link a {
-    display: inline-block;
-    margin-right: 10px;}
+.container-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img{
   
-  @media (min-width: 992px) {
-    .index-link, #index-biography, #index-nowadays, #index-friends, #index-gallery {
-      display: inline-block;
-      margin-right: 10px; }
-  }
-
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-   .one-link {
-      display: block; ;
-      margin-bottom: 10px;} 
-      .two-link {
-        display: block;;
-        margin-bottom: 10px;} 
-  
-      
+        width: 100%;
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+}
+ @media (min-width: 992px)
+   {
+     /* friens */
+    .desc-head th{
+        font-size: 1.3em;
     }
-  
+    .desc-body td{
+        font-size: 1.2em;
+    } 
+    /* bio,now */
+    .col-lg-4{
+        flex-basis: 33.3%;
+    }
+    .col-lg-6{
+        flex-basis: 50%;
+    }
+    .idex-flex
+    {
+        flex-basis: 25%;
+    }
+    /* gallery */
+    .lg-4{
+        flex-basis: 33.3%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px)
+   {
+    /* friens */
+    .tab-head th{
+        font-size: 1.2em;
+    }
+    .tab-body td{
+        font-size: 1.1em;
+    }
+    /* bio,now */
+    .col-md-6{
+        flex-basis: 50%;
+    }
+    .col-md-12{
+        flex-basis: 100%;
+    }
 
+    .idex-flex
+    {
+        flex-basis: 50%;
+    }
+    /* gallery */
+    .md-6{
+        flex-basis: 50%;
+    }
+    .md-12{
+        flex-basis: 100%;
+    }
+    }
+  @media (max-width: 767px)
+  {
+    /* friens */
+    .mobil-head
+    th{
+        font-size: 1.1em;
+    }
+    
+    /* bio,now */
+    .col-sm-12{
+        flex-basis: 100%;
+    }
+
+
+    .idex-flex
+    {
+        flex-basis: 100%;
+    }
+    /* gallery */
+    .sm-12{
+        flex-basis: 100%;
+    }
+
+}
   
-  @media (max-width: 767px) {
-    .index-link, #index-biography, #index-nowadays, #index-friends, #index-gallery   {
-      display: block;
-      margin-bottom: 10px; 
-  }}
 /* biografy */
+.conteiner-nowadays, .container-biography
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 .colored-button:link {
     background-color: rgb(106, 106, 215);
     color: rgb(37, 39, 20);
@@ -57,41 +124,55 @@
     border: 2px solid rgb(83, 35, 204);
 }
 
-#c1:nth-child(even) {
-    background-color: rgba(6, 252, 252, 0.516);
+ #bazik-info, #c1:nth-child(even) {
+    background-color: rgba(6, 252, 252, 0.921);
     color: rgb(10, 112, 83);
+  
 }
 
-#c2:nth-child(even) {
+#childhood, #c2:nth-child(even) {
     background-color: rgb(71, 32, 82);
     color: rgb(245, 128, 173);
+   
 }
 
-#c3:nth-child(even) {
-    background-color: rgba(18, 121, 66, 0.936);
+ #shool-years, #c3:nth-child(even) {
+    background-color: rgb(31, 100, 63);
     color: rgb(245, 247, 205);
+   
 }
 
-#c4:nth-child(even) {
+#outside-of-shool, #c4:nth-child(even) {
     background-color: rgb(203, 206, 31);
     color: rgb(98, 18, 195);
 }
 
-#c5:nth-child(even) {
-    background-color: rgba(71, 21, 72, 0.416);
+#university, #c5:nth-child(even)
+ {
+    background-color: rgb(225, 77, 227);
     color: rgb(70, 7, 54);
 }
-
+#university, #outside-of-shool, #shool-years, #childhood, #bazik-info
+{
+    font-size: 1em;
+    border: solid 1px;
+}
 .biography-h1 {
     text-align: center;
     font-size: 22px;
 }
 
 .biography-nazad-na-golovny{
- font-style: italic;}
+ font-style: italic;
+ text-decoration: none;
+
+}
 .biography-do-zmisty
- {
-font-weight: bold;}
+{
+font-weight: bold;
+text-decoration: none;
+font-size: 1.2em;
+}
 
 .biography-h3 {
     text-align: center;
@@ -103,10 +184,13 @@ font-weight: bold;}
 
 .biography-h2 {
     font-size: 180%;
+    color: #000000  !important;
 }
 
 .biography-uppercase {
     text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 /* friends */
   table {
@@ -184,6 +268,8 @@ font-weight: bold;}
 
   .friends-nazad{
       font-style: italic;
+      text-decoration: none;
+
   }
 
       .friends-h2 {
@@ -201,6 +287,7 @@ font-weight: bold;}
       text-align: right;
   }
 /* gallery */
+
 .gallery-h1 {
     text-align: center;
     font-size: 20px;
@@ -208,6 +295,7 @@ font-weight: bold;}
 
 .gallery-golovna {
     font-style: italic;
+    text-decoration: none;
 }
 
 .gallery-h2 {
@@ -229,71 +317,98 @@ font-weight: bold;}
     text-align: center;
 }
 
-.gallery-img {
+/* .gallery-img {
     display: block;
     margin: 0 auto;
-}
+} */
 /* index */
+.link-index{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ .idex-flex
+{
+    text-align: center;
+    margin-bottom: 10px;}
+ 
 /* 1  */
+
+.index-body >.index-p
+{
+    font-size: 1.2em;
+}
 #index-biography:link {
 
     color: #f9008d;
+    text-decoration: none;
 }
 
 #index-biography:hover {
     color: #b210e3;
+    text-decoration: none;
 }
 
 #index-biography:visited {
     color: #420c63;
+    text-decoration: none;
 }
 
 /* 2 */
 #index-nowadays:link {
 
     color: #d7e90f;
+    text-decoration: none;
 }
 
 #index-nowadays:hover {
-    color: #0df0ec;
+    color: rgb(23, 65, 65);
+    text-decoration: none;
 }
 
 #index-nowadays:visited {
     color: #00fc65;
+ text-decoration: none;
 }
 
 /* 3 */
 #index-friends:link {
 
     color: #c05d92;
+    text-decoration: none;
 }
 
 #index-friends:hover {
-    color: #000000;
+    color: #ee0c0c;
+    text-decoration: none;
 }
 
 #index-friends:visited {
-    color: #372b9d;
+    color: rgb(185, 143, 70);
+    text-decoration: none;
 }
 
 /* 4 */
 #index-gallery:link {
 
     color: #3c786e;
+    text-decoration: none;
 }
 
 #index-gallery:hover {
-    color: #fb6908;
+    color: #fb08b6;
+    text-decoration: none;
 }
 
 #index-gallery:visited {
     color: #767812;
+    text-decoration: none;
 }
 
 .index-h1 {
     text-align: center;
     font-size: 24px;
-
+    text-decoration: none;
 }
 
 
@@ -301,7 +416,7 @@ font-weight: bold;}
 .index-p {
     font-size: 120%;
 }
-
+/* 1 */
 #index-biography:link {
 
     color: #f9008d;
@@ -312,7 +427,7 @@ font-weight: bold;}
 }
 
 #index-biography:visited {
-    color: #420c63;
+    color: rgb(154, 21, 21);
 }
 
 /* 2 */
@@ -340,7 +455,7 @@ font-weight: bold;}
 }
 
 #index-friends:visited {
-    color: #372b9d;
+    color: #9087dc;
 }
 
 /* 4 */
@@ -392,6 +507,7 @@ font-weight: bold;}
 
   .nowadays-link {
       font-style: italic;
+      text-decoration: none;
   }
 
   .nowadays-h2 {
