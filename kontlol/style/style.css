@@ -1,0 +1,89 @@
+*
+{
+    box-sizing: border-box;
+}
+h2
+{
+   font-size: 140%; 
+}
+.font
+{
+    font-family: 'Roboto';
+}
+.container-h2 
+{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.h2-flex 
+{
+    font-family:'Poppins' ;
+}
+.container-info
+{
+    display: flex;
+    align-items: flex-start;
+}
+/* section-lorem*/
+.section-lorem
+{
+    background-color: rgb(172, 189, 173);
+  
+} 
+.h2-lorem
+{   
+    
+    width:300px; 
+    background-color: aqua;
+    color: black;
+}
+.container-text-lorem
+{
+    color: rgb(20, 20, 227);
+}
+/* section-list*/
+.section-list
+{
+   background-color: rgb(131, 221, 221);
+  
+}
+.h2-list
+{
+  
+    width:300px; 
+    background-color: rgb(255, 0, 170);
+    color: rgb(67, 13, 13);
+}
+.container-text-list
+{
+    color: rgb(31, 55, 47);
+}
+/* section-table */
+.section-table
+{
+  background-color: rgb(63, 63, 97);
+ 
+}
+.h2-table
+{
+    width:300px; 
+    background-color: rgb(100, 61, 37);
+    color: rgb(208, 214, 233);
+}
+.container-text-table
+{
+    color: rgb(151, 211, 208);
+}
+/* section-img */
+.section-img
+{
+    background-color: rgb(255, 0, 157);
+   
+}
+.h2-img
+{
+    width:300px; 
+    background-color: rgb(208, 255, 0);
+    color: rgb(31, 64, 53);
+}
